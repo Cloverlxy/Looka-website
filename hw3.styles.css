@@ -1,0 +1,400 @@
+/*All 3 webpages*/
+
+body
+{
+    margin: 0;
+    background-color:#b4cb9a;
+}
+
+header 
+{
+    background-color: #245752;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.logo
+{
+    margin-left: 15px;
+    text-align: left;
+}
+
+.links 
+{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navigation 
+{
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li 
+{
+    margin-right: 20px;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.navigation li a 
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Merriweather';
+}
+
+.navigation li a:hover 
+{
+    color: #f3e5cd ;
+    text-decoration: underline;
+}
+
+/* For home page*/
+.banner
+{
+    position: relative;
+    background: url(../Images/Looka\ indoor.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    height: 900px;
+    text-align: center;
+}
+
+.banner::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #245752;
+    opacity: .4;
+    z-index: 1;
+}
+
+.banner h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 158px;
+    font-family: 'Rouge Script', cursive;
+    z-index: 2;
+    margin: 0;
+}
+
+/* The why Looka section in Home page*/
+h2
+{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather';
+    font-size: 80px;
+    margin-top: 150px;
+}
+
+p
+{
+    margin-bottom: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 25px;
+    color: #fff;
+    font-family: 'Bricolage Grotesque';
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h5
+{
+    margin-bottom: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 25px;
+    color: #fff;
+    font-family: 'Bricolage Grotesque';
+    text-align: center;
+    font-size: 40px;
+}
+
+/*Photo-gallery in homepage*/
+.container
+{
+    max-width: fit-content;
+    margin: auto;
+    padding: 50px;
+}
+
+.photo-gallery
+{
+    display: flex;
+    gap: 20px;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image
+{
+    width: 450px;
+    position: relative;
+}
+
+.image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/*The menu webpage with menu table*/
+.menu
+{
+    background: url(../Images/indoor.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 1000px;
+    opacity: 0.9;
+}
+
+.tablestyle
+{
+    margin-top: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 70px;
+    border-radius: 5px;
+    text-align: center;
+    opacity:.85;
+    width: 1500px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+td
+{
+    font-family: 'Bricolage Grotesque';
+    color: #245752;
+}
+
+th {
+    font-family: 'Merriweather';
+    font-size: 14px;
+    background-color: #245752;
+    color: #fff;
+}
+
+tbody
+{
+    background-color: #b4cb9a;
+}
+
+/*The menu webpage with dessert gallery*/
+.container2
+{
+    max-width: fit-content;
+    margin: auto;
+    padding: 50px;
+}
+
+.photo-gallery2
+{
+    display: flex;
+    gap: 20px;
+}
+
+.column2
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image2
+{
+    width: 450px;
+    position: relative;
+}
+
+.image2 img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.content
+{
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.content:hover
+{
+    opacity: 1;
+    font-family: 'Merriweather';
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/*The reservation webpage with reservation form*/
+.Booking
+{
+    background: url(../Images/indoor.jpg) no-repeat center;
+    opacity: .8;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 800px;
+}
+
+.Reservation
+{
+    margin-top: 100px;
+    max-width: fit-content;
+    background: #245752;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 70px;
+    border-radius: 5px;
+    text-align: center;
+    opacity:.9;
+}
+
+.Reservation h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather';
+    font-size: 30px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+
+.form
+{
+    background: #fff;
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+label
+{
+    font-size: 15px;
+    color: #245752;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-family: 'Bricolage Grotesque';
+    width: 250px;
+    text-align: left;
+}
+
+input
+{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button
+{
+    width: 500px;
+    display: inline-block;
+    background-color: #b4cb9a;
+    padding: 13px ;
+    text-decoration: none;
+    border-color: none;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Bricolage Grotesque';
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+/*All 3 webpages*/
+footer 
+{
+    font-family: 'Merriweather';
+    font-size: 14px;
+    background-color: #245752;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1
+{
+    text-align: left;
+}
+
+.footer1 a
+{
+    color: #fff;
+    background-color: transparent;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer1 a:hover
+{
+    color: #f3e5cd;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.footer2
+{
+    text-align: right;
+}
